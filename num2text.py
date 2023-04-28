@@ -23,7 +23,16 @@ def special_form_init() -> None:
 
 
 def num_to_raw_list(num: int) -> list[str]:
-    pass
+    str_num_reversed = str(num)[::-1]
+
+    raw_list: list[str] = []
+    level = 1
+
+    for i in str_num_reversed:
+        raw_list.append(NUM_IN_TEXT[i] + " " + UNIT[level])
+        level += 1
+
+    return raw_list[::-1]
 
 
 def num2text(num: int) -> str:
@@ -32,3 +41,5 @@ def num2text(num: int) -> str:
 
 if __name__ == "__main__":
     special_form_init()
+
+    print(num_to_raw_list(12223))
