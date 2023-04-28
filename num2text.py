@@ -35,6 +35,14 @@ def num_to_raw_list(num: int) -> list[str]:
     return raw_list[::-1]
 
 
+def raw_list_to_str(raw_list: list[str]) -> str:
+    text: str = ""
+    for i in raw_list:
+        text += i + " "
+
+    return text
+
+
 def num2text(num: int) -> str:
     pass
 
