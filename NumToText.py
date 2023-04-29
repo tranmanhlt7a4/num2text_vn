@@ -45,6 +45,7 @@ class NumToText():
 
         self.__text: str = ""
         self.__generate_text()
+        self.__text = self.__text.strip()
 
     def __out_of_range_check(self):
         num_str = str(self.__number)
