@@ -17,6 +17,7 @@ UNIT: dict[int, str] = {1: "", 2: "mươi", 3: "trăm",
 # !IMPORTANT: Các trường hợp đặc biệt mà không hiện ra bắt buộc phải để cuối danh sách
 # !IMPORTANT: để sau khi xử lí thô xong có thể loại bỏ các phần đặc biệt đó đi.
 SPECIAL_CASE: dict[str, str] = {"một mươi": "mười",
+                                "mười năm": "mười lăm",
                                 "mươi một": "mươi mốt",
                                 "không mươi": "linh",
                                 "mươi không": "mươi",
